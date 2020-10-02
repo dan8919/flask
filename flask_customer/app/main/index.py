@@ -6,4 +6,7 @@ main = Blueprint('main',__name__,url_prefix='/')
 
 @main.route('/main',methods = ['GET'])
 def index():
-    return render_template('/main/index.html')
+    testData = 'testData array'
+    
+    #return render_template('/main/index.html',testDataHtml = testData)
+    return render_template('/test/test1.html',testDataHtml = testData)
